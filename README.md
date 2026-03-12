@@ -1,59 +1,107 @@
-# CesaeAppV2
+# 🏋️ CatPowerGym
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.16.
+[![Live Demo](https://img.shields.io/badge/Live-Demo-2ea44f?style=for-the-badge&logo=github)](https://catirato.github.io/CatPowerGym/)
+![Angular](https://img.shields.io/badge/Angular-Framework-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Responsive](https://img.shields.io/badge/Design-Responsive-blue?style=for-the-badge)
+![Status](https://img.shields.io/badge/status-completed-success?style=for-the-badge)
 
-## Development server
+**CatPowerGym** is a **responsive Angular web application** designed for a modern gym.  
+The website showcases the gym’s **services, facilities, and contact information** through a clean and engaging user interface.
 
-To start a local development server, run:
+The application includes several sections such as a **dynamic homepage, image gallery, fitness blog, and contact page**, using **Angular reusable components and client-side routing** to provide a smooth browsing experience.
+
+The project was designed as a **static web application suitable for deployment on GitHub Pages**.
+
+---
+
+# 🌐 Live Demo
+
+🔗 **View the website:**  
+https://catirato.github.io/CatPowerGym/
+
+---
+
+# 🖼️ Website Preview
+
+<p align="center">
+  <img src="screenshots/home.png" width="220">
+  <img src="screenshots/gallery.png" width="220">
+  <img src="screenshots/blog.png" width="220">
+  <img src="screenshots/contact.png" width="220">
+</p>
+
+---
+
+# ✨ Features
+
+- 🏠 Dynamic homepage presenting the gym
+- 🖼 Image gallery showcasing facilities
+- 📝 Fitness blog section
+- 📞 Contact page with gym information
+- 🔀 Client-side routing with Angular Router
+- 🧩 Reusable Angular components
+- 📱 Fully responsive layout
+- ⚡ Static site deployment compatible with GitHub Pages
+
+---
+
+# 🛠 Tech Stack
+
+| Technology | Purpose |
+|------------|--------|
+| **Angular** | Frontend framework |
+| **TypeScript** | Application logic |
+| **HTML5** | Page structure |
+| **CSS3** | Styling and responsive design |
+| **Angular Router** | Navigation between pages |
+
+---
+
+# 📂 Project Structure
+
+```
+CatPowerGym/
+│
+├── src/
+│   ├── app/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   └── app-routing.module.ts
+│   │
+│   ├── assets/
+│   └── styles/
+│
+└── README.md
+```
+
+---
+
+# 🚀 Running the Project
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run the development server
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Then open:
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```
+http://localhost:4200
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+# 👩‍💻 Author
 
-## Building
+**Catarina Rato**
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Front-end project developed to explore **Angular components, routing, and responsive interface design**.
