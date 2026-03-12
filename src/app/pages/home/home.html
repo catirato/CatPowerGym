@@ -1,0 +1,52 @@
+<div class="container mt-4 mb-5">
+
+  <!-- Carousel -->
+  <app-carousel></app-carousel>
+
+  <!-- Cards Pequenos -->
+  <div class="row mt-5">
+
+    @for (card of smallCards; track card.title) {
+
+      <div class="col-md-4 col-12 d-flex mb-4">
+        <app-card
+          class="w-100"
+          [imageUrl]="card.imageUrl"
+          [title]="card.title"
+          [description]="card.description"
+        />
+      </div>
+
+    } @empty {
+
+      <div class="col-12 text-center text-muted">
+        <p>Nenhum modelo disponível.</p>
+      </div>
+
+    }
+
+  </div>
+
+  <!-- Cards Horizontais -->
+  <div class="mt-5">
+
+    @for (card of horizontalCards; let i = $index; track card.title) {
+
+      <app-horizontal-card
+        [title]="card.title"
+        [description]="card.description"
+        [imageUrl]="card.imageUrl"
+        [align]="i % 2 === 0 ? 'right' : 'left'"
+      />
+
+    } @empty {
+
+      <div class="text-center text-muted">
+        <p>Sem detalhes adicionais.</p>
+      </div>
+
+    }
+
+  </div>
+
+</div>

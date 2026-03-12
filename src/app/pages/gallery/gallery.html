@@ -1,0 +1,27 @@
+<div class="container py-5">
+
+  <!-- Header -->
+  <div class="text-center mb-5">
+    <h1 class="display-5 fw-bold">Check Our Gym Gallery</h1>
+    <p class="text-muted">
+      Explore our facilities, training sessions, and the energy that drives our community.
+    </p>
+    <button class="btn btn-outline-primary">Join Us Today</button>
+  </div>
+
+  <!-- Image Grid -->
+  <div class="row g-4">
+    @for (image of images; track image) {
+      <div class="col-lg-3 col-md-6 col-12">
+        <div class="gallery-item">
+          <img
+            [src]="image"
+            class="img-fluid rounded shadow-sm"
+            alt="Gym training image"
+          />
+        </div>
+      </div>
+    }
+  </div>
+
+</div>

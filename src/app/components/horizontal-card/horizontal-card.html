@@ -1,0 +1,78 @@
+<div class="card mb-4 w-100">
+
+  @switch (align) {
+
+    <!-- IMAGEM À ESQUERDA -->
+    @case ('left') {
+      <div class="row g-0 align-items-stretch">
+
+        @if (imageUrl) {
+          <div class="col-md-4">
+            <img
+              [src]="imageUrl"
+              class="img-fluid rounded-start"
+              [alt]="title || 'Imagem do card'"
+            />
+          </div>
+        }
+
+        <div class="col-md-8">
+          <div class="card-body">
+
+            @if (title) {
+              <h5 class="card-title">{{ title }}</h5>
+            }
+
+            @if (description) {
+              <p class="card-text">{{ description }}</p>
+            }
+
+          </div>
+        </div>
+
+      </div>
+    }
+
+    <!-- IMAGEM À DIREITA -->
+    @case ('right') {
+      <div class="row g-0 align-items-stretch">
+
+        <div class="col-md-8">
+          <div class="card-body">
+
+            @if (title) {
+              <h5 class="card-title">{{ title }}</h5>
+            }
+
+            @if (description) {
+              <p class="card-text">{{ description }}</p>
+            }
+
+          </div>
+        </div>
+
+        @if (imageUrl) {
+          <div class="col-md-4">
+            <img
+              [src]="imageUrl"
+              class="img-fluid rounded-end"
+              [alt]="title || 'Imagem do card'"
+            />
+          </div>
+        }
+
+      </div>
+    }
+
+    <!-- FALLBACK -->
+    @default {
+      <div class="row g-0">
+        <div class="col-12 text-center text-muted p-4">
+          <p>Layout inválido.</p>
+        </div>
+      </div>
+    }
+
+  }
+
+</div>
